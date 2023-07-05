@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using FOI to get source code: the EasyCount experience</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    .narrow-container { margin: 0 auto; max-width: 700px; }
+    .jumbotron { margin: 60px 0; text-align: center; }
+    .jumbotron h1 { font-size: 72px; line-height: 1; }
+    .anchor { padding-top: 40px; margin-top: -40px; }
+    .materials { font-size: 130%; } 
+    .materials li { margin-bottom: 1ex; }
+    h2 { border-bottom: thick solid #000; color: #000; }
+    h2 small, h3 small { color: #000; font-size: 13.5px; line-height: 40px; }
+</style>
+</head>
+<body data-offset="80">
+<div class="narrow-container">
+  <div class="jumbotron">
+    <h1>Using FOI to get source code</h1>
+    <p class="lead">The EasyCount experience</p>
+    <p>Talk by Michael Cordover at <a href="http://linux.conf.au">linux.conf.au</a> on 14 January 2015</p>
+  </div>
+  <div class="anchor row-fluid">
+    <div class="span12">
+      <h2>Materials</h2>
+      <ul class="materials">
+        <li><a href="lca2015.pdf">Slides</a> <small>(<abbr title="portable document format">PDF</abbr> 863kb)</small></li>
+        <li><a href="http://youtu.be/BhUM1mUMurg">Video</a></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <h2>Abstract</h2>
+        <p>Most modern discussions about open government focus on "Gov 2.0" initiatives like open data licensing, release of data in machine readable formats and enabling online access to government. However, these mostly rely on pro-active governments providing that access voluntarily.</p>
+        <p>This opening up of government information is in part due to the excellent work done in the 1990s and 2000s pushing for the adoption of open data standards. This has enabled a greater adoption of open source software by governments.</p>
+        <p>What we don't see is much government contribution back to open source projects. With only a few exceptions, most software developed for and by government remains closed source. In fact, these projects are often shrouded in secrecy.</p>
+        <p>The origins of open government policy can be traced to the passage of Freedom of Information (FOI) acts in the 1980s. These provide individuals with a statutory right of access to information produced by government. The basic idea behind FOI was that people should be able to see what their taxpayer dollars were funding.</p>
+        <p>So, can FOI be used to open up source code for these secretive projects? Perhaps - but not fully, and certainly not easily.</p>
+        <p>The software used in Australia’s notoriously complicated Senate elections was developed in-house at the Australian Electoral Commission (AEC) and is called EasyCount. In October 2013 I submitted a FOI request asking for the source code for EasyCount and associated documentation. Access was refused on the basis that the code was a trade secret.</p>
+        <p>The AEC has fought hard to prevent the source code being seen by the public, or even scrutineers from political parties. They even refused to provide me with a list of documents identified.</p>
+        <p>I’m currently appealing the AEC’s decision through the courts, thanks to more than $10,000 in crowd funding. In return the AEC has sought to have me declared a vexatious applicant. In the middle of it all the Senate passed a motion ordering the responsible minister to table the source code in Parliament, but the government refused to comply.</p>
+        <p>Even if I win in court (which is far from certain), the code will still be protected by copyright. While the code might be available for inspection, none of the 260,000 lines of code will able to be reused for anything else.</p>
+        <p>There’s a strong argument that major public investments in software development should result in code released under an open licence. I think FOI can be part of this process, but that we're only seeing the beginning of some major developments in open government policy. Ultimately I hope this will culminate in more government-created software released as open source.</p>
+      </div>
+    </div>
+  <hr>
+  <p class="footer">Last updated: 18 January 2015</p>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.mjec.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 6]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.mjec.net/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>Two factor authentication</title>
+	
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="../deck.js/core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="../deck.js/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="../deck.js/extensions/scale/deck.scale.css">
+    <link rel="stylesheet" href="../playitagainsam-js/playitagainsam.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="../deck.js/themes/style/swiss.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="../deck.js/themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="../deck.js/modernizr.custom.js"></script>
+
+    <style type="text/css">
+        .pias_container {
+            margin: 1em;
+        }
+        .deck-container .slide iframe {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+        p.mjec-logo {
+            z-index: 3;
+            position: fixed;
+            bottom: 10px;
+            left: 5px;
+            font-size: 45%;
+            color: #888;
+        }
+        .copyright:link, .copyright:hover, .copyright:visited, .copyright:active {
+            text-decoration: none;
+        }
+        #mjec-link:link, #mjec-link:hover, #mjec-link:visited, #mjec-link:active {
+            font-family: sans-serif;
+            color: #c00;
+            text-decoration: none;
+        }
+    </style>
+
+    <!-- Required JS files. -->
+    <script src="../deck.js/jquery-1.7.2.min.js"></script>
+    <script src="../deck.js/core/deck.core.js"></script>
+
+    <!-- Extension JS files. Add or remove as needed. -->
+    <script src="../deck.js/core/deck.core.js"></script>
+    <script src="../deck.js/extensions/hash/deck.hash.js"></script>
+    <script src="../deck.js/extensions/menu/deck.menu.js"></script>
+    <script src="../deck.js/extensions/goto/deck.goto.js"></script>
+    <script src="../deck.js/extensions/status/deck.status.js"></script>
+    <script src="../deck.js/extensions/scale/deck.scale.js"></script>
+    <script src="../playitagainsam-js/playitagainsam.js"></script>
+
+    <!-- Initialize the deck. You can put this in an external file if desired. -->
+    <script type="text/javascript">
+      $(function() {
+          $.extend(true, $.deck.defaults, {
+              countNested: false
+          });
+          $.deck('.slide');
+      });
+      var onEnterSlideCallbacks = {};
+      var onEnterSlide = function(selector, cb) {
+          var slide_id = $(selector).attr("id");
+          if(typeof onEnterSlideCallbacks[slide_id] == "undefined") {
+              onEnterSlideCallbacks[slide_id] = [];
+          }
+          onEnterSlideCallbacks[slide_id].push(cb)
+      }
+      $(document).bind("deck.change", function(event, from, to) {
+          var $slide = $.deck("getSlide", to);
+          var slide_id = $slide.attr("id");
+          var callbacks = onEnterSlideCallbacks[slide_id];
+          if(typeof callbacks != "undefined") {
+              for(var i=0; i<callbacks.length; i++) {
+                  callbacks[i]();
+              }
+          }
+      });
+      var writePIASSlide = function (id, title, rtStart, rtEnd) {
+          document.write('<section class="slide" id="pias-' + id + '-slide">');
+          if(title) {
+              document.write('<h2>' + title + '</h2>');
+          }
+          document.write('<div id="pias-' + id + '-player"></div>');
+          document.write('<scr' + 'ipt type="text/javascript" src="./pias-' + id + '.js"></scr' + 'ipt>');
+          document.write('<scr' + 'ipt type="text/javascript">');
+          $(function() {
+              onEnterSlide("#pias-" + id + "-slide", function() {
+                  var player = new PIAS.Player($("#pias-" + id + "-player"))
+                  var varname = "pias_" + id + "_data";
+                  while(varname != varname.replace("-", "_")) {
+                      varname = varname.replace("-", "_");
+                  }
+                  player.play(window[varname], function() {
+                      player.destroy();
+                  });
+              });
+          });
+          document.write('</scr' + 'ipt>');
+          document.write('</section>');
+      }
+    </script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+
+<section class="slide">
+    <h1>Two Factor Authentication</h1>
+    <p><a href="http://www.taslug.org.au/modules/news/article.php?storyid=194">TasLUG</a> 21 Nov 2012</p>
+</section>
+
+<section class="slide">
+    <h2>Obligatory intro slide</h2>
+    <ul>
+        <li class="slide">Small-to-medium web app development</li>
+        <li class="slide">... so systems administration</li>
+        <li class="slide">Project management</li>
+        <li class="slide">Lawyerin'</li>
+        <li class="slide">Fancy tea</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>What is Two Factor Authentication?</h2>
+    <p>I'll call it 2FA</p>
+    <ol>
+        <li>What's authentication?</li>
+        <li>What are these factors?</li>
+    </ol>
+</section>
+
+<section class="slide">
+    <h2>What is authentication?</h2>
+    <blockquote cite="http://en.wikipedia.org/wiki/Authentication">
+        <p>the act of confirming the truth of an attribute of a datum or entity</p>
+        <p><cite><a href="http://en.wikipedia.org/wiki/Authentication">Wikipedia</a></cite></p>
+    </blockquote>
+    <p class="slide">Who is this schmuck?</p>
+</section>
+
+<section class="slide">
+    <h2>What factors?</h2>
+    <p>How do we know this schmuck is who they say they are?</p>
+    <h3>Shared secrets</h3>
+    <ul>
+        <li class="slide">Something you know (password)</li>
+        <li class="slide">Something you have (smartcard)</li>
+        <li class="slide">Something you are (fingerprint)</li>
+    </ul>
+    <p class="slide">We want two of these</p>
+</section>
+
+<section class="slide">
+    <h2>Some examples</h2>
+    <div class="slide">
+        <h3>In the world</h3>
+        <ul>
+            <li>Bank cards (know <abbr title="Personal Identification Number">PIN</abbr> + have card)</li>
+            <li>Credit cards (have card + are signature)</li>
+            <li>Data centre access control (know code + are fingerprint)</li>
+        </ul>
+    </div>
+    <div class="slide">
+        <h3>In computing</h3>
+        <ul>
+            <li>Encryption keys (know password + have key)</li>
+            <li>Smart cards (know PIN + have card)</li>
+            <li>Internet banking (know password + have phone)</li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <h2>What good is it?</h2>
+    <ul class="slide">
+        <li>Authenticating in <strong>software only</strong></li>
+        <li>Protects against compromised passwords</li>
+        <li>Can protects against replay attacks</li>
+    </ul>
+    <div class="slide">
+        <h3>Does not prevent</h3>
+        <ul>
+            <li>Hardware compromise</li>
+            <li>Man-in-the-middle attacks</li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <h2>How do we do it?</h2>
+    <p>Lots of ways but we will focus on two similar methods</p>
+    <div class="slide">
+        <h3>HOTP</h3>
+        <ul>
+            <li>HMAC-based One-Time Password</li>
+            <li><a href="https://tools.ietf.org/html/rfc4226">RFC 4226</a></li>
+        </ul>
+    </div>
+    <div class="slide">
+        <h3>TOTP</h3>
+        <ul>
+            <li>Time-based One-Time Password</li>
+            <li><a href="https://tools.ietf.org/html/rfc6238">RFC 6238</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <h2>Google Authenticator</h2>
+    <ul>
+        <li>Supports both HOTP and TOTP</li>
+        <li>Supports <abbr title="Pluggable Authentication Module">PAM</abbr></li>
+        <li>Open-source PAM, Android app, iOS app, Blackberry app</li>
+        <li>Stored in secure phone memory (Android at least)</li>
+        <li>Emergency scratch codes</li>
+        <li>QR code key provisioning</li>
+        <li>Compatible with any RFC-compliant app</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Use case: required for SSH logins</h2>
+    <ol>
+        <li class="slide">Download, compile and install module</li>
+        <li class="slide">Create user key (in <code>~/.google_authenticator</code>)</li>
+        <li class="slide">Scan key onto phone</li>
+        <li class="slide">Require correct code for login</li>
+    </ol>
+</section>
+
+<section class="slide" id="demo-1">
+    <h2>Demo: Step 1</h2>
+    <p>Download, compile and install module</p>
+</section>
+
+<section class="slide" id="demo-2">
+    <h2>Demo: Step 2</h2>
+    <p>Create user key</p>
+</section>
+
+<section class="slide" id="demo-3a">
+    <h2>Demo: Step 3</h2>
+    <p>Scan key onto phone</p>
+    <p><img src="2fa-app.png"></P>
+</section>
+
+<section class="slide" id="demo-3b">
+    <h2>Demo: Step 3</h2>
+    <p>Scan key onto phone</p>
+    <p><img src="2fa-add-menu.png"></p>
+</section>
+
+<section class="slide" id="demo-3c">
+    <h2>Demo: Step 3</h2>
+    <p>Scan key onto phone</p>
+    <p><img src="2fa-code-entered.png"></p>
+</section>
+
+<section class="slide" id="demo-3d">
+    <h2>Demo: Step 3</h2>
+    <p>Scan key onto phone</p>
+    <p><img src="2fa-manual-add.png"></p>
+</section>
+
+<section class="slide" id="demo-4">
+    <h2>Step 4</h2>
+    <p>Require correct code to login</p>
+    <ul>
+        <li>In <code>/etc/pam.d/sshd</code> add
+            <code>auth required pam_google_authenticator.so</code></li>
+        <li>In <code>/etc/ssh/sshd_config</code> ensure
+            <code>ChallengeResponseAuthentication yes</code> is set</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Questions?</h2>
+    <h3>Links</h3>
+    <ul>
+        <li>Slides: <a href="http://mjec.net/talks/2fa/">mjec.net/talks/2fa</a></li>
+        <li>Google Authenticator: <a href="http://code.google.com/p/google-authenticator/">code.google.com/p/google-authenticator</a></li>
+        <li>Me: <a href="http://mjec.net/">mjec.net</a></li>
+    </ul>
+    <p>Slideshow made with <a href="http://imakewebthings.com/deck.js">deck.js</a> &amp; 
+    <a href="https://github.com/rfk/playitagainsam">playitagainsam</a></p>
+    <p>Slides are <a href="http://creativecommons.org/licenses/by-sa/3.0/au/">CC-BY-SA 3.0 AU</a></p>
+</section>
+<!-- End slides. -->
+
+<p class="mjec-logo">
+    <a href="http://mjec.net" id="mjec-link">ത</a>
+    Michael Cordover
+    &middot; <a href="http://mjec.net/talks/2fa/">mjec.net/talks/2fa</a>
+    &middot; <a href="http://creativecommons.org/licenses/by-sa/3.0/au/" class="copyright">CC-BY-SA 3.0 AU</a>
+</p>
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+</body>
+</html>

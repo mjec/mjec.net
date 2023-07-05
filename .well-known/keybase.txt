@@ -1,0 +1,79 @@
+
+==================================================================
+https://keybase.io/mjec
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mjec.net
+  * I am mjec (https://keybase.io/mjec) on keybase.
+  * I have a public key with fingerprint A7AC CAF8 7492 E09E 148F  3459 2410 1EE9 EF53 230B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.8"
+        },
+        "key": {
+            "fingerprint": "a7accaf87492e09e148f345924101ee9ef53230b",
+            "host": "keybase.io",
+            "key_id": "24101EE9EF53230B",
+            "uid": "ccdee26a8b4cee1481fbec6a55239719",
+            "username": "mjec"
+        },
+        "merkle_root": {
+            "ctime": 1433414161,
+            "hash": "c3c4e3bdee3480d99c40083f2b2b0980356a1158638460b3bd5cd9dfe2b1bfc0f24219cd321dd214e1ed27cb67e0cbd2f470c28fc365d92994d68a62ac45f4a9",
+            "seqno": 239915
+        },
+        "service": {
+            "hostname": "mjec.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1433414192,
+    "expire_in": 157680000,
+    "prev": "5c6cbc41e8e0d5f7c78aa336656caf739c31b9351dbf68ba177e249d1c91580b",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFdkltoHUUYx8+xNZwGUg/FWimlNmsf1ByPc9+doG0TGhGNSB8qFpR1Z+bbZHOS
+3ePuSdpQIi0NQrEttlDvIE0VG/pQfRD7osZLvBV9KKYFORa1eEksUouItoruHCJU
+92l2vt/8v/9/vnmqY0mhVJzrKu/23951qXhqXhW21m9DOx2VmHGne6ejhyOIG3YV
+ByPgdDs1GFdBBtUoWRcnBqpD2bpFpuKMQZpFSZxTqOpWPWeiYnF7OIziAUjraWS1
+nMANtA5Cz2WSAJKAmRdSxiVhGGEACSGnhCKVSw4mWeM/XZ2Wph+ZfLfF9/XJvrtb
+fG9eG20VtDYARASeYhqsPA4VaBFwTqh0sbRgBulipJEh0NbrCKS1YfDTJGkF1o3I
+ljGjlGGGBc7dBNmglaeaAVV5D8o8ZKTUDCGPhkQRhaSHKBcBxtwT1GMCqZzk2kgT
+AlFYhRqFhBEstaEEG0MwAwyGuFoJF5BWhoTMRZp4oaaCG0mkZEZ4gSCBZjxkgbWf
+wWNx4nTncSTmE/Y/HYs0WN/2yq5KVo3BzqaeJo1EJ8P57mCjUe+2gRvjdUttB+Uv
+nvdfUVFs8mFdPU2co/+7DEkqDuyoRyn4kSW4KzyUf7YPjOWaXAutNMPgATI8dLXr
+BQGlQnCRT96lUlOsJOXYqFB4KsCuC4RJg3Wex2uNfjEizX0GA7lkFg3EQWM0BWdi
+b3HN0kKxVGi79hr7XAvty8r/vuHKtlJhptR/duPsrg9vT455Rw5PTreN37xiI37i
+nc6LD5Xg67XNF1nHxPJHDu3bxJ++3i+TA0s+vyfavmfP8n1bqodWlmfmb3x4bvbl
+nslbdnQdfbDyUW/7o8+e+3Tmjrteb/tl/4b7vr2UHo86vvuCnZvPXmveVDqzorn0
+/d6Pnxxdfb7z+60PXK4Of/XG+R8x3vzrSweh5/7+L59rfvLN6pOd/PDu5vqFM5ef
+Wdl2YcOqrmPHp2rt1/lo9nQ2M3UF/P1Hp93i0NyWD9Y64YGOvj9OL0zufXfwLX6x
+duq9x//+efOVv17o/2lZuauncuuak1PrT6CpNy/Uagenfztyg1j4/c5tf5797N5V
+NefEplef/+Ef
+=Zkpm
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mjec
+
+==================================================================
+
+

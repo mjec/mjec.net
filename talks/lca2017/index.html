@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Future privacy</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+  <style type="text/css">
+    .narrow-container { margin: 0 auto; max-width: 700px; }
+    .jumbotron { margin: 60px 0; text-align: center; }
+    .jumbotron h1 { font-size: 72px; line-height: 1; }
+    .anchor { padding-top: 40px; margin-top: -40px; }
+    .materials { font-size: 130%; } 
+    .materials li { margin-bottom: 1ex; }
+    h2 { border-bottom: thick solid #000; color: #000; }
+    h2 small, h3 small { color: #000; font-size: 13.5px; line-height: 40px; }
+</style>
+</head>
+<body data-offset="80">
+<div class="narrow-container">
+  <div class="jumbotron">
+  <h1>Future privacy</h1>
+    <p>Talk by Michael Cordover at <a href="http://linux.conf.au">linux.conf.au</a> on 18 January 2017</p>
+  </div>
+  <div class="anchor row-fluid">
+    <div class="span12">
+      <h2>Materials</h2>
+      <ul class="materials">
+        <li><a href="lca2017.pdf">Slides</a> <small>(<abbr title="portable document format">PDF</abbr> 326kb)</small></li>
+        <li><a href="lca2017-notes.pdf">Slides with notes</a> <small>(<abbr title="portable document format">PDF</abbr> 341kb)</small></li>
+        <li><a href="https://www.youtube.com/watch?v=AfX6MGKNC34">Streaming video</a> <small>(Youtube)</small></li>
+      </ul>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <h2>Abstract</h2>
+        <p>Privacy isn't dead, but sometimes it's not even clear what we mean when we mean by the word "privacy". In this talk we'll take a deep dive into the ways we think about privacy and how technological development has shaped this. In particular, pervasive data collection by government and non-government actors has totally changed the landscape. We live in the future, but we weren't conscious of how we got here.</p>
+        <p>One conception of privacy is about preventing disclosure of personal information. This model - preferred by lawmakers - says that the most important thing is that your name isn't associated with other information without your consent. Of course, this is meaningless when you have anonymized <a href="https://support.google.com/analytics/answer/2790010">aggregation</a> and <a href="http://www.abs.gov.au/websitedbs/D3310114.nsf/Home/Statistical+Data+Integration">data matching</a>. Why is protection of your name important when your GUID provides a much better matching key, or two data points can be <a href="http://www.tapad.com/">correlated with high probability</a>? And what does consent mean when you aren't aware of any of this today, let alone how it could affect you in a year or ten?</p>
+        <p>Another version of privacy is about solitude: being able to do things without being observed. A hundred years ago, this meant closing the door. These days there are hidden depths to everything we do. Data collection and analytics is probably being performed by your operating system, your keyboard, the application you're using and every service your data passes through at every OSI layer. Even strong encryption doesn't provide protection from metadata analysis, which can reveal enormous amounts you didn't think you were revealing. Even when this data is anonymised (to the extent that is possible) and used in the aggregate, that still doesn't sit well with many people. And that's before we even get to <a href="http://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=1&amp;_r=2&amp;hp">creepy inference</a> or <a href="http://www.slate.com/articles/health_and_science/science/2014/06/facebook_unethical_experiment_it_made_news_feeds_happier_or_sadder_to_manipulate.html">being an unwitting subject of experimentation</a>.</p>
+        <p>There is a technological response to this changing environment: open, decentralised systems can be incredibly effective for bringing things back into line with user expectations. But in a world increasingly moving to centralised services, where even your open source tools are running in the cloud, how realistic is it to expect this to catch on? Is a legal approach any better in a globalised world where governments are as much a threat to privacy as non-government actors? Or should society just adapt to this kind of more open living?</p>
+      </div>
+    </div>
+  <hr>
+  <p class="footer">Last updated: 19 January 2017</p>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.mjec.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 6]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.mjec.net/piwik.php?idsite=6" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,557 @@
+{
+  "events": [
+    {
+      "act": "OPEN", 
+      "size": [
+        79, 
+        24
+      ], 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.036524057388305664
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "wget http://google-authenticator.googlecode.com/files/libpam", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "-", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "- \r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "google-authenticator-1.0-source.tar.bz2", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0023398399353027344
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "--2012-11-21 16:14:28--  http://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2\r\nResolving google-authenticator.googlecode.com (google-authenticator.googlecode.com)... ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.2524569034576416
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "74.125.31.82, 2404:6800:4008:c00::52\r\nConnecting to google-authenticator.googlecode.com (google-authenticator.googlecode.com)|74.125.31.82|:80... ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.09693598747253418
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "connected.\r\nHTTP request sent, awaiting response... ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.6414799690246582
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "200 OK\r\nLength: 32708 (32K) [application/x-bzip2]\r\nSaving to: \u2018libpam-google-authenticator-1.0-source.tar.bz2\u2019\r\n\r\n\r 0% [                                      ] 0           --.-K/s              ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.20154595375061035
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r24% [========>                             ] 7,879       35.8KB/s             ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.139268159866333
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r100%[=====================================>] 32,708      88.0KB/s   in 0.4s   \r\n\r\n2012-11-21 16:14:30 (88.0 KB/s) - \u2018libpam-google-authenticator-1.0-source.tar.bz2\u2019 saved [32708/32708]\r\n\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "tar xvjf li", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0007488727569580078
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "bpam-google-authenticator-1.0-source.tar.bz2 ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.014178991317749023
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "libpam-google-authenticator-1.0/base32.c\r\nlibpam-google-authenticator-1.0/demo.c\r\nlibpam-google-authenticator-1.0/google-authenticator.c\r\nlibpam-google-authenticator-1.0/hmac.c\r\nlibpam-google-authenticator-1.0/pam_google_authenticator.c\r\nlibpam-google-authenticator-1.0/pam_google_authenticator_unittest.c\r\nlibpam-google-authenticator-1.0/sha1.c\r\nlibpam-google-authenticator-1.0/base32.h\r\nlibpam-google-authenticator-1.0/hmac.h\r\nlibpam-google-authenticator-1.0/sha1.h\r\nlibpam-google-authenticator-1.0/totp.html\r\nlibpam-google-authenticator-1.0/Makefile\r\nlibpam-google-authenticator-1.0/FILEFORMAT\r\nlibpam-google-authenticator-1.0/README\r\nlibpam-google-authenticator-1.0/utc-time/\r\nlibpam-google-authenticator-1.0/utc-time/app.yaml\r\nlibpam-google-authenticator-1.0/utc-time/utc-time.py\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "cd li", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "bpam-google-authenticator-1.0/", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\u001b]0;mjec@petulia:~/libpam-google-authenticator-1.0\u0007[mjec@petulia libpam-google-authenticator-1.0]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "vi pam", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0032351016998291016
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u0007_google_authenticator", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": ".", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0015060901641845703
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "c ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.01654815673828125
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b[?1049h\u001b[24;1H\u001b[?25h\u001b=\"pam_google_authenticator.c\"", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.10145711898803711
+    }, 
+    {
+      "act": "WRITE", 
+      "data": " 1601 lines, 48300 characters \u001b[H\u001b[2J// PAM module for two-factor authentication.\u001b[H\n//\r\n// Copyright 2010 Google Inc.\r\n// Author: Markus Gutschke\r\n//\r\n// Licensed under the Apache License, Version 2.0 (the \"License\");\r\n// you may not use this file except in compliance with the License.\r\n// You may obtain a copy of the License at\r\n//\r\n//      http://www.apache.org/licenses/LICENSE-2.0\r\n//\r\n// Unless required by applicable law or agreed to in writing, software\r\n// distributed under the License is distributed on an \"AS IS\" BASIS,\r\n// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\r\n// See the License for the specific language governing permissions and\r\n// limitations under the License.\r\n\n#define _GNU_SOURCE\r\n#include <errno.h>\r\n#include <fcntl.h>\r\n#include <limits.h>\r\n#include <pwd.h>\r\n#include <stdarg.h>\u001b[H\u001b[23B\"pam_google_authenticator.c\" 1601 lines, 48300 characters \u001b[H", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "1", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "4", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "0", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "1", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "G", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b[H\u001b[2J        if (params.pass_mode == PROMPT ||\u001b[H\n            params.pass_mode == TRY_FIRST_PASS) {\r\n          if (!saved_pw) {\r\n            // If forwarding the password to the next stacked PAM module,\r\n            // we cannot tell the difference between an eight digit scratch\r\n            // code or a two digit password immediately followed by a six\r\n            // digit verification code. We have to loop and try both\r\n            // options.\r\n            saved_pw = request_pass(pamh, params.echocode,\r\n                                    params.forward_pass ?\r\n                                    \"Password & verification code: \" :\r\n                                    \"Verification code: \");\r\n          }\r\n          if (saved_pw) {\r\n            pw = strdup(saved_pw);\r\n          }\r\n        }\r\n        break;\r\n      }\r\n      if (!pw) {\r\n        continue;\r\n      }\u001b[11;37H", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\u001b", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "[", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "B", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "w", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\"", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "c", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "w", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b[11C$\u001b[12D", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "OTP", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\u001b", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b[P\u001b[P\u001b[P\u001b[P\u001b[P\u001b[P\u001b[P\u001b[P\u001b[P\b", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": ":", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\u001b[12B:", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "wq", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\"pam_google_authenticator.c\"", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.09408307075500488
+    }, 
+    {
+      "act": "WRITE", 
+      "data": " 1601 lines, 48291 characters \r\n\u001b[?25h\u001b>\u001b[r\u001b[?1049l\u001b]0;mjec@petulia:~/libpam-google-authenticator-1.0\u0007[mjec@petulia libpam-google-authenticator-1.0]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "make", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.07476687431335449
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o google-authenticator.o google-authenticator.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.2872951030731201
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o base32.o base32.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.05540108680725098
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o hmac.o hmac.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.05888509750366211
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o sha1.o sha1.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.09460711479187012
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -g   -o google-authenticator google-authenticator.o base32.o hmac.o sha1.o  -ldl\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.027292966842651367
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o pam_google_authenticator.o pam_google_authenticator.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.6262919902801514
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -shared -g   -o pam_google_authenticator.so pam_google_authenticator.o base32.o hmac.o sha1.o -lpam\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.02077007293701172
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o demo.o demo.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.09736108779907227
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -DDEMO --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o pam_google_authenticator_demo.o pam_google_authenticator.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.6222691535949707
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -g   -rdynamic -o demo demo.o pam_google_authenticator_demo.o base32.o hmac.o sha1.o  -ldl\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.02672886848449707
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -DTESTING --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden        \\\r\n              -o pam_google_authenticator_testing.o pam_google_authenticator.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.614008903503418
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -shared -g   -o pam_google_authenticator_testing.so pam_google_authenticator_testing.o base32.o hmac.o sha1.o -lpam\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.021656036376953125
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc --std=gnu99 -Wall -O2 -g -fPIC -c  -fvisibility=hidden  -o pam_google_authenticator_unittest.o pam_google_authenticator_unittest.c\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.30330395698547363
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "gcc -g   -rdynamic -o pam_google_authenticator_unittest pam_google_authenticator_unittest.o base32.o hmac.o sha1.o -lc  -ldl\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.023895978927612305
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b]0;mjec@petulia:~/libpam-google-authenticator-1.0\u0007[mjec@petulia libpam-google-authenticator-1.0]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "sudo make install", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n[sudo] password for mjec: ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "a", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\r\ncp pam_google_authenticator.so /usr/lib/security\r\ncp google-authenticator /usr/local/bin\r\n\u001b]0;mjec@petulia:~/libpam-google-authenticator-1.0\u0007[mjec@petulia libpam-google-authenticator-1.0]$ ", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "exit", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nexit\r\n", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }, 
+    {
+      "act": "CLOSE", 
+      "term": "3975107014634f12990817e3e6e66a89"
+    }
+  ]
+}

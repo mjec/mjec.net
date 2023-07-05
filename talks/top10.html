@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA39/fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADb29tAmZmZ/3R0dP+BgYH/vLy8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDw8NAjo6O/3R0dP95eXn/qampvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6dAhoaG/3R0dP+QkJD/p6enQOPj40CgoKC/iYmJ/6Ghof+Hh4eA4+PjQAAAAAAAAAAAAAAAAAAAAACPj49Afn5+/3h4eP+goKC/AAAAAK2trYCGhob/dHR0/3p6ev+VlZW/v7+/QAAAAAAAAAAAAAAAAAAAAAC+vr6/enp6/4qKiv/BwcGAt7e3QJ6env91dXX/e3t7/5ubm7/Hx8dAAAAAAJfp6YBI1dWAgePjgLvv70DX19dAq6ur/5ubm7/n5+eAo6Ojv3l6ev9+fn7/oKCgv9PT00C78+9Ag+Liv0nZ2f8c0dH/JNLS/1vc3P+J4uK/AAAAAAAAAAC9vb2AiYmJ/4GBgf+kpKS/29vbQKHr64B24uL/LdPT/yvS0v9i39//YtvbgLvv70AAAAAAAAAAAAAAAAAAAAAAAAAAAMnJyYDT6+uAXtvbgE/a2v821NP/beHg/3Lf34DD8/NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj9/fgIvm5v+F4+OAz/f3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA/v8AAPw/AAD4fwAA8YcAAOIPAACEMQAAgMAAAMIHAADgPwAA8f8AAP//AAD//wAA//8=" type="image/x-icon">
+
+    <title>DOMA Top 10</title>
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="deck.js/core/deck.core.css" media="screen">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css" media="screen">
+	<link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css" media="screen">
+	<link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css" media="screen">
+	<link rel="stylesheet" href="deck.js/extensions/status/deck.status.css" media="screen">
+	<link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css" media="screen">
+	<link rel="stylesheet" href="deck.js/extensions/scale/deck.scale.css" media="screen">
+
+	<!-- Style theme -->
+	<link rel="stylesheet" href="deck.js/themes/style/swiss.css">
+	
+	<!-- Transition theme -->
+	<link rel="stylesheet" href="deck.js/themes/transition/horizontal-slide.css" media="screen">
+
+	<!-- Required Modernizr file -->
+	<script src="deck.js/modernizr.custom.js"></script>
+
+    <style type="text/css">
+        .deck-container .slide iframe {
+            max-width: none;
+            margin-bottom: 10px;
+        }
+        .slide img {
+            max-width: 60%;
+        }
+        .deck-container .slide blockquote {
+            font-size: 1em;
+            max-width: 40em;
+        }
+        p#talk-metadata {
+            z-index: 3;	
+            position: fixed;
+            bottom: 10px;
+            left: 5px;
+            font-size: 45%;
+            color: #888;
+        }
+        p#dma-logo {
+            z-index: 3;
+            position: fixed;
+            top: 10px;
+            right: 5px;
+            max-width: 30%; 
+        }
+        p#dma-logo img {
+            max-width: 100% !important;
+        }
+        .copyright:link, .copyright:hover, .copyright:visited, .copyright:active {
+            text-decoration: none;
+        }
+        #mjec-link:link, #mjec-link:hover, #mjec-link:visited, #mjec-link:active {
+            font-family: sans-serif;
+            color: #B2B230;
+            text-decoration: none;
+        }
+        .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited, .deck-container .slide h2 {
+            color: #B2B230;
+        }
+        .deck-container .slide ::selection {
+            background-color: #B2B230;
+        }
+        @media screen {
+            .printonly {
+                display: none;
+            }
+        }
+        @media print {
+            .deck-status, .deck-permalink, .goto-form, .noprint {
+                display: none;
+            }
+            :not(.printchildren).slide ul, :not(.printchildren).slide p, :not(.printchildren).slide blockquote {
+                display: none;
+            }
+            .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited, .deck-container .slide h2 {
+                color: #000;
+            }
+            .slide h2 {
+                font-size: 0.8em;
+                page-break-after: avoid;
+            }
+            li, p, blockquote {
+                font-size: 0.8em;
+            }
+            .slide ul li {
+                list-style-type: none;
+            }
+            .slide {
+                page-break-inside: avoid;
+            }
+            .slide ul {
+                margin-top: 0;
+                margin-bottom: 0;
+                page-break-inside: avoid;
+            }
+            .author {
+                margin-top: -1em;
+                font-size: 0.5em;
+            }
+        }
+    </style>
+
+    <!-- Required JS files. -->
+    <script src="deck.js/jquery-1.7.2.min.js"></script>
+    <script src="deck.js/core/deck.core.js"></script>
+
+    <!-- Extension JS files. Add or remove as needed. -->
+    <script src="deck.js/core/deck.core.js"></script>
+    <script src="deck.js/extensions/hash/deck.hash.js"></script>
+    <script src="deck.js/extensions/menu/deck.menu.js"></script>
+    <script src="deck.js/extensions/goto/deck.goto.js"></script>
+    <script src="deck.js/extensions/status/deck.status.js"></script>
+    <script src="deck.js/extensions/scale/deck.scale.js"></script>
+
+    <!-- Initialize the deck. You can put this in an external file if desired. -->
+    <script type="text/javascript">
+      $(function() {
+          $.extend(true, $.deck.defaults, {
+              countNested: false
+          });
+          $.deck('.slide');
+      });
+      var onEnterSlideCallbacks = {};
+      var onEnterSlide = function(selector, cb) {
+          var slide_id = $(selector).attr("id");
+          if(typeof onEnterSlideCallbacks[slide_id] == "undefined") {
+              onEnterSlideCallbacks[slide_id] = [];
+          }
+          onEnterSlideCallbacks[slide_id].push(cb)
+      }
+      $(document).bind("deck.change", function(event, from, to) {
+          var $slide = $.deck("getSlide", to);
+          var slide_id = $slide.attr("id");
+          var callbacks = onEnterSlideCallbacks[slide_id];
+          if(typeof callbacks != "undefined") {
+              for(var i=0; i<callbacks.length; i++) {
+                  callbacks[i]();
+              }
+          }
+      });
+    </script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide printchildren" id="title">
+    <h1><abbr title="M+K dobson mitchell allport lawyers">DOMA</abbr> Top 10<small class="printonly muchsmaller"><br>legal risks in web development</small></h1>
+    <p id="dma-logo"><a href="http://www.doma.com.au/"><img src="http://www.doma.com.au/sites/all/themes/dmawebsite/images/title.jpg" alt="M+K dobson mitchell allport lawyers"></a></p>
+    <p class="printonly author">Michael Cordover (M+K dobson mitchell allport lawyers) &middot; licenced under <a href="http://creativecommons.org/licenses/by-sa/3.0/au/">CC-BY-SA 3.0 AU</a></p>
+</section>
+
+<section class="slide noprint" id="who">
+    <h2>Who/what/why</h2>
+    <ul>
+        <li>Webdev turned lawyer</li>
+        <li>Top 10 legal vulnerabilities<br><small>Like the OWASP Top 10</small></li>
+        <li>Series of tubes = advanced knowledge</li>
+        <li>Getting it wrong burns!</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a1">
+    <h2>1: No written agreement</h2>
+    <p class="slide noprint" id="a1-ayfk"><img src="ayfk.png" alt="Are you kidding?"></p>
+    <ul class="printonly">
+        <li>The SQL injection of legal vulnerabilities</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a2">
+    <h2>2: Poor payment terms</h2>
+    <ul>
+        <li>Milestones</li>
+        <li>Timeframes</li>
+        <li>Interest &amp; debt collection</li>
+        <li>Security for payment
+            <ul class="noprint">
+                <li>Termination</li>
+                <li>Lien</li>
+                <li><abbr title="Personal property securities register">PPSR</abbr></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a3">
+    <h2>3: Insufficient <abbr title="intellectual property">IP</abbr> clauses</h2>
+    <ul>
+        <li>Who will own copyright?</li>
+        <li>When is copyright assigned?</li>
+        <li>Is it yours to give?</li>
+        <li>What about background materials?</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a4">
+    <h2>4: Unlicenced materials</h2>
+    <ul>
+        <li>Code snippits</li>
+        <li>Stuff made for a former client/employer<!-- Dias --></li>
+        <li>Assets</li>
+        <li>"Inspired" copies<!-- Down Under --></li>
+        <li>Not just code</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a5">
+    <h2>5: Lack of indemnities</h2>
+    <ul>
+        <li class="noprint">Who knows what that even is?</li>
+        <li>Host liability</li>
+        <li>Using supplied materials</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a6">
+    <h2>6: Illegal boilerplate</h2>
+    <ul>
+        <li>At best unenforceable</li>
+        <li>Unintended consequences</li>
+        <li>You might get fined</li>
+    </ul>
+    <blockquote class="noprint">The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.</blockquote>
+</section>
+
+<section class="slide printchildren" id="a7">
+    <h2>7: Poor employee/subcontractor agreements</h2>
+    <ul>
+        <li>Intellectual property</li>
+        <li>Non-work/semi-work activities</li>
+        <li>Trade secrets/non-compete</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a8">
+    <h2>8: No portfolio rights</h2>
+    <ul>
+        <li>Use of trademarks</li>
+        <li>Confidentiality</li>
+        <li>IP ownership</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a9">
+    <h2>9: Poor specifications</h2>
+    <ul>
+        <li>Keep agreement up-to-date</li>
+        <li>Provide a change process</li>
+        <li>Clear what's in/out of scope</li>
+    </ul>
+</section>
+
+<section class="slide printchildren" id="a10">
+    <h2>10: Unlimited liability</h2>
+    <ul>
+        <li>Consequential loss</li>
+        <li>Third party failures</li>
+        <li>Reliance on advice</li>
+        <li>Updates and bug fixes</li>
+    </ul>
+</section>
+
+
+<section class="slide printchildren" id="end">
+    <h2>Questions?</h2>
+    <ul>
+        <li class="printonly">Michael Cordover</li>
+        <li class="noprint">This talk: <a href="http://www.doma.com.au/talks/top10.html">doma.com.au/talks/top10.html</a> (printable!)</li>
+        <li><a href="http://www.doma.com.au/our_people/michael_cordover"><span class="printonly">http://www.</span>doma.com.au</a></li>
+        <li><a href="mailto:mjec@doma.com.au">mjec@doma.com.au</a></li>
+        <li><a href="tel:+61362100031">(03) 6210 0031</a></li>
+    </ul>
+</section>
+<!-- End slides -->
+
+<p id="talk-metadata" class="noprint">
+    <a href="http://www.doma.com.au/our_people/michael_cordover" id="mjec-link"><img src="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA39/fgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADb29tAmZmZ/3R0dP+BgYH/vLy8/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDw8NAjo6O/3R0dP95eXn/qampvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnp6dAhoaG/3R0dP+QkJD/p6enQOPj40CgoKC/iYmJ/6Ghof+Hh4eA4+PjQAAAAAAAAAAAAAAAAAAAAACPj49Afn5+/3h4eP+goKC/AAAAAK2trYCGhob/dHR0/3p6ev+VlZW/v7+/QAAAAAAAAAAAAAAAAAAAAAC+vr6/enp6/4qKiv/BwcGAt7e3QJ6env91dXX/e3t7/5ubm7/Hx8dAAAAAAJfp6YBI1dWAgePjgLvv70DX19dAq6ur/5ubm7/n5+eAo6Ojv3l6ev9+fn7/oKCgv9PT00C78+9Ag+Liv0nZ2f8c0dH/JNLS/1vc3P+J4uK/AAAAAAAAAAC9vb2AiYmJ/4GBgf+kpKS/29vbQKHr64B24uL/LdPT/yvS0v9i39//YtvbgLvv70AAAAAAAAAAAAAAAAAAAAAAAAAAAMnJyYDT6+uAXtvbgE/a2v821NP/beHg/3Lf34DD8/NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAj9/fgIvm5v+F4+OAz/f3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA/v8AAPw/AAD4fwAA8YcAAOIPAACEMQAAgMAAAMIHAADgPwAA8f8AAP//AAD//wAA//8=" alt="M+K dobson mitchell allport"></a>
+    Michael Cordover
+    &middot; <a href="http://www.doma.com.au/talks/top10.html">doma.com.au/talks/top10.html</a>
+    &middot; <a href="http://creativecommons.org/licenses/by-sa/3.0/au/" class="copyright">CC-BY-SA 3.0 AU</a>
+</p>
+
+<!-- Begin extension snippets -->
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets -->
+
+</body>
+</html>

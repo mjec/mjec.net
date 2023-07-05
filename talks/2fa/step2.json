@@ -1,0 +1,226 @@
+{
+  "events": [
+    {
+      "act": "OPEN", 
+      "size": [
+        79, 
+        24
+      ], 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.03455090522766113
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "google-au", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "thenticator ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.28060388565063477
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nDo you want authentication tokens to be time-based (y/n) ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "y", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nhttps://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/mjec@petulia%3Fsecret%3D6II62NXTB2SFBJS7\r\n\u001b[30;47;27m                                                                          \u001b[0m\r\n\u001b[30;47;27m                                                                          \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m              \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m            \u001b[27m    \u001b[7m              \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m  \u001b[27m            \u001b[7m  \u001b[27m        \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m        \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m      \u001b[27m      \u001b[7m          \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m        \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m              \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m              \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m                    \u001b[7m    \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m      \u001b[27m  \u001b[7m    \u001b[27m                    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m          \u001b[27m      \u001b[7m          \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m          \u001b[7m          \u001b[27m        \u001b[0m\r\n\u001b[30;47;27m        \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m  \u001b[7m        \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m        \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m        \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m      \u001b[7m    \u001b[27m  \u001b[7m          \u001b[27m              \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m        \u001b[7m            \u001b[27m    \u001b[7m      \u001b[27m    \u001b[7m      \u001b[27m    \u001b[7m            \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m      \u001b[7m  \u001b[27m    \u001b[7m        \u001b[27m      \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m        \u001b[7m        \u001b[27m      \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m      \u001b[7m  \u001b[27m      \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m            \u001b[7m      \u001b[27m  \u001b[7m        \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m      \u001b[7m        \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m        \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m      \u001b[7m    \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m    \u001b[27m      \u001b[7m  \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m          \u001b[27m      \u001b[7m      \u001b[27m  \u001b[7m      \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m    \u001b[27m        \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m        \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m      \u001b[27m  \u001b[7m    \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m      \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m                  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m      \u001b[7m      \u001b[27m  \u001b[7m    \u001b[27m      \u001b[7m        \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m      \u001b[7m      \u001b[27m        \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m      \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m        \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m        \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m              \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m            \u001b[27m  \u001b[7m      \u001b[27m        \u001b[7m      \u001b[27m    \u001b[7m  \u001b[27m                  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m        \u001b[27m                        \u001b[7m      \u001b[27m  \u001b[7m      \u001b[27m    \u001b[7m      \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m          \u001b[27m  \u001b[7m      \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m    \u001b[7m        \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m      \u001b[7m  \u001b[27m        \u001b[7m                \u001b[27m          \u001b[0m\r\n\u001b[30;47;27m                    \u001b[7m          \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m            \u001b[27m  \u001b[7m    \u001b[27m      \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m              \u001b[27m                \u001b[7m      \u001b[27m    \u001b[7m  \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m        \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m      \u001b[7m          \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m        \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m      \u001b[7m      \u001b[27m  \u001b[7m            \u001b[27m          \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m    \u001b[27m    \u001b[7m  \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m        \u001b[7m          \u001b[27m    \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m      \u001b[7m    \u001b[27m            \u001b[7m  \u001b[27m    \u001b[7m  \u001b[27m                \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m  \u001b[27m          \u001b[7m  \u001b[27m      \u001b[7m    \u001b[27m  \u001b[7m      \u001b[27m    \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m        \u001b[27m    \u001b[7m    \u001b[27m        \u001b[0m\r\n\u001b[30;47;27m    \u001b[7m              \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m      \u001b[27m  \u001b[7m    \u001b[27m  \u001b[7m  \u001b[27m  \u001b[7m  \u001b[27m    \u001b[7m      \u001b[27m  \u001b[7m  \u001b[27m      \u001b[7m    \u001b[27m      \u001b[0m\r\n\u001b[30;47;27m                                                                          \u001b[0m\r\n\u001b[30;47;27m                                                                          \u001b[0m\r\nYour new secret key is: 6II62NXTB2SFBJS7\r\nYour verification code is 929029\r\nYour emergency scratch codes are:\r\n  53541102\r\n  84447476\r\n  23742760\r\n  89921092\r\n  27258273\r\n\r\nDo you want me to update your \"/home/mjec/.google_authenticator\" file (y/n) ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "y", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\r\nDo you want to disallow multiple uses of the same authentication\r\ntoken? This restricts you to one login about every 30s, but it increases\r\nyour chances to notice or even prevent man-in-the-middle attacks (y/n) ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "y", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\r\nBy default, tokens are good for 30 seconds and in order to compensate for\r\npossible time-skew between the client and the server, we allow an extra\r\ntoken before and after the current time. If you experience problems with poor\r\ntime synchronization, you can increase the window from its default\r\nsize of 1:30min to about 4min. Do you want to do so (y/n) ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\r\nIf the computer that you are logging into isn't hardened against brute-force\r\nlogin attempts, you can enable rate-limiting for the authentication module.\r\nBy default, this limits attackers to no more than 3 login attempts every 30s.\r\nDo you want to enable rate-limiting (y/n) ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "y", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0005118846893310547
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "cat ~/.go", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u0007ogle_authenticator", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0010020732879638672
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "6II62NXTB2SFBJS7\r\n\" RATE_LIMIT 3 30\r\n\" DISALLOW_REUSE\r\n\" TOTP_AUTH\r\n53541102\r\n84447476\r\n23742760\r\n89921092\r\n27258273\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "stat ~/.go", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\t", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\u0007ogle_authenticator", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.0012500286102294922
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "  File: \u2018/home/mjec/.google_authenticator\u2019\r\n  Size: 109       \tBlocks: 8          IO Block: 4096   regular file\r\nDevice: fe02h/65026d\tInode: 656728      Links: 1\r\nAccess: (0400/-r--------)  Uid: ( 1000/    mjec)   Gid: (  100/   users)\r\nAccess: 2012-11-21 16:31:22.579528966 +1100\r\nModify: 2012-11-21 16:31:16.262768237 +1100\r\nChange: 2012-11-21 16:31:16.262768237 +1100\r\n Birth: -\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "exit", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nexit\r\n", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }, 
+    {
+      "act": "CLOSE", 
+      "term": "72a77d4b4b954389afe36b6e40b4d2a5"
+    }
+  ]
+}

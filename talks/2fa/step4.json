@@ -1,0 +1,137 @@
+{
+  "events": [
+    {
+      "act": "OPEN", 
+      "size": [
+        79, 
+        24
+      ], 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "ssh localhost", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.8125991821289062
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "Host key fingerprint is 12:34:56:12:34:7d:35:ad:56:a1:6e:72:6c:74:72:2a\r\n\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.57505202293396
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "Password: ", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "a", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.2520279884338379
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "OTP code: ", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "1", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "PAUSE", 
+      "duration": 0.3748021125793457
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nWelcome to petulia!\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "exit", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\n\u001b]0;mjec@petulia:~\u0007[mjec@petulia ~]$ ", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nexit\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "ECHO", 
+      "data": "exit", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "READ", 
+      "data": "\r", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "WRITE", 
+      "data": "\r\nexit\r\n", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }, 
+    {
+      "act": "CLOSE", 
+      "term": "4e1ae687ae1a4c448fbd4800787b08b3"
+    }
+  ]
+}
